@@ -64,3 +64,9 @@ sudo pacman qemu-full libvirt virt-manager
 ```bash
 sudo systemctl enable libvirtd --now 
 ```
+
+### Step 3 - Add the user to the libvirt group
+
+```bash
+sudo usermod -aG libvirt $USER
+```
